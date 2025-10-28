@@ -25,5 +25,14 @@ module.exports = {
     },
     rules: {
         'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                argsIgnorePattern: '^_',
+            },
+        ],
     },
 };
