@@ -10,6 +10,8 @@ function Navbar() {
     console.log("test");
 
     const test2: any = "abc"
+
+    const abc: any = 0
     return (
         <>
             <div>
