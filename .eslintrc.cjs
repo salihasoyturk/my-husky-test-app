@@ -6,14 +6,14 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
+        'plugin:@typescript-eslint/recommended',
         'prettier',
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
+    plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jsx-a11y'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -29,12 +29,9 @@ module.exports = {
     rules: {
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-unused-vars': [
             'error',
-            {
-                argsIgnorePattern: '^_',
-            },
+            { argsIgnorePattern: '^_' }
         ],
     },
 };
