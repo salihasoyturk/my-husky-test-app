@@ -5,13 +5,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [count2, setCount2] = useState(0)
+  const [count2, setCount2] = useState<any>(0)
   const test = ""
   console.log("test");
 
   const test2 = "abc"
-
-
   return (
     <>
       <div>
